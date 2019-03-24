@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Альтернативная энергетика, зелёный тариф, солнечная энергия.">
+	<meta name="keywords" content="Solaris, Соларис, Альтернативная энергетика, зелёный тариф, солнечная энергия.">
+	<title>Solaris</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/favicon.png">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Popup window arcticmodal -->
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="section" id="calculator">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="section-title how-begin-title" data-aos="fade-up">
+						Калькулятор электростанции
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="calculator-wrap d-flex">
+						<div class="calculator-left-block">
+							<p class="calculator-title">
+								Сделайте расчет станции
+							</p>
+							<div class="calculator-item d-flex">
+								<p class="calculator-item__text">
+									Мощность электростанции, кВт:
+								</p>
+								<input id="in1" type="number" class="calculator-item__input calculator-item__input_top">
+							</div>
+							<div class="calculator-item d-flex">
+								<p class="calculator-item__text">
+									Количество панелей, шт:
+								</p>
+								<input id="in2" type="number" class="calculator-item__input">
+							</div>
+							<div class="calculator-item d-flex">
+								<p class="calculator-item__text">
+									Генерация кВт в год:
+								</p>
+								<input id="in3" type="text" class="calculator-item__input">
+							</div>
+							<div class="calculator-item d-flex">
+								<p class="calculator-item__text">
+									Площадь станции, м. кв.
+								</p>
+								<input id="in4" type="text" class="calculator-item__input">
+							</div>
+							<div class="calculator-item d-flex">
+								<p class="calculator-item__text">
+									Ежегодный заработок, грн
+								</p>
+								<input id="in5" type="text" class="calculator-item__input">
+							</div>
+							<div class="calculator-img">
+								<img src="../img/domik.png" alt="foto" class="domic-img">
+							</div>
+						</div>
+						<div class="calculator-right-block">
+							<p class="form-title">
+								Получите точный расчет у нашего специалиста
+							</p>
+							<div class="form-calculator-wrap">
+								<form action="success.php" class="js-form wrap-input form-footer form-calculator" id="popupResult">
+									<input type="text" name="name" required placeholder="Введите имя"  class="form-control form__field form__input">
+									  <input type="text" name="tel" required placeholder="Введите телефон"  class="form-control form__field form__input">
+									  <p class="form-text">
+									  	<i class="fa fa-check-square"></i>
+									  	<span>Я даю согласие на обработку  персональных данных</span>
+									  </p>
+									 <button class="act font-bold form__btn" data-submit>Выполнить расчет</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
